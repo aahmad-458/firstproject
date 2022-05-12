@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .navbar {
+    height: 12vh;
+    background-color: #57606f;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid {
+    padding: 1.5rem;
+    background-color: #f2f2f2;
+    height: 88vh;
+    display: flex;       
+    flex-wrap: wrap;    
+    justify-content: space-evenly; 
+    overflow-y: scroll;
+  }
+  
+  .filter-container,
+  .action-container {
+    height: 74%;
+    margin-top: 0.78rem;
+    background-color: #2f3542;
+    margin-left: 5rem;
+    border-radius: 2px;
+    display: flex;
+  }
+  
+  .filter-container{
+    width: 16rem;
+  }
+  
+  .action-container{
+    width: 8rem;
+  }
+  
+  
+  .filter {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filter:hover {
+    background-color: #747d8c;
+  }
+  
+  
+  .add,
+  .delete {
+    height: 100%;
+    width: 50%;
+    font-size: 3rem;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .add {
+      font-size: 2.4rem;
+    }
+    
+  .delete {
+    font-size: 2.9rem;
+  }
+  
+  .add:hover,
+  .delete:hover,
+  .delete-state,
+  .selected-filter {
+    cursor: pointer;
+    background-color: #747d8c;
+  }
+  
+  
+  .filter div {
+    height: 50%;
+    width: 50%;
+    border-radius: 6px;
+  }
+  
+  .pink-color-btn,
+  .pink {
+    background-color: #d595aa;
+  }
+  
+  .blue-color-btn,
+  .blue {
+    background-color: #5ecdde;
+  }
+  
+  .green-color-btn,
+  .green {
+    background-color: #91e6c7;
+  }
+  
+  .black-color-btn,
+  .black {
+    background-color: black;
+  }
+  
+  .material-icons {
+    font-size: 1.6rem !important;
+  }
+  
+  .modal-container{
+    height: 20rem;
+    display: flex;
+    width: 35rem;
+    position: fixed;
+    top: 20vh;
+    left: 30%;
+    transform: 50%;
+    box-shadow: 0px 0px 10px 0px black;
+  }
+  
+  
+  .writing-area{
+    background-color: #ecf0f1;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    font-size: 1.4rem;
+    padding: 2rem;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .filter-area{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    margin-right: -0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+  }
+  
+  .modal-filter{
+    opacity: 0.7;
+    width: 22%;
+    height: 2rem;
+    margin-bottom: 0.8rem;
+    border-radius: 18px;
+  }
+  
+  .modal-filter:hover{
+    opacity: 1;
+  }
+  
+  .ticket{
+    height: 8rem;
+    width: 14rem;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-color{
+    width: 100%;
+    height: 5%;
+  }
+  
+  .ticket-id{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    height: 20%;
+    width: 100%;
+    color: #989393;
+  }
+  
+  .ticket-box{
+    overflow-y: auto;
+    padding: 0.3rem 0.1rem 0 0.1rem;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 75%;
+    width: 100%;
+    outline: none;
+  }
+  
+  .active-modal-filter{
+    border: 1px solid white;
+    opacity: 1;
+  }
+  
+  .footer{
+    background-color: #0E2431;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.2rem 0;
+  }
+  
+  .footer__title{
+    margin-top: 0.8rem;
+  }
+  
+  .footer__social{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer__icon{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 1rem;
+  }
+   
+  @media(max-width: 800px)
+  {
+    .filter-container,
+  .action-container {
+    margin-left: 1rem;
+    height: 60%;
+    margin-top: 0.9rem;
+  
+  } 
+  
+  .filter-container {
+    width: 8rem !important;
+  }
+  
+  .action-container {
+    width: 4rem !important;
+  }
+  
+  .modal-container {
+    height: 10rem;
+    width: 15rem;
+    top: 25vh;
+    left: 10%;
+  }
+  .writing-area{
+  
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  .modal-filter {
+    height: 1rem;
+  }
+  
+  }
